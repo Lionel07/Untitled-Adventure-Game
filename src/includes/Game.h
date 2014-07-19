@@ -10,6 +10,8 @@ class Game {
 		int status;
 
 		Game();
+		void ProcessSDLEvent(SDL_Event* e);
+		void render();
 		~Game();
 };
 
