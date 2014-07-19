@@ -11,6 +11,8 @@ find_package(SDL REQUIRED)
 include(FindSDL)
 include_directories(${SDL_INCLUDE_DIR})
 
+add_definitions(-Wno-write-strings)
+
 add_executable(adventure ${SRCS_ALL})
 
 target_link_libraries(adventure ${SDL_LIBRARY})
